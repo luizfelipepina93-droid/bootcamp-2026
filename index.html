@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
 <body>
     <header class="cabecalho" id="cabecalho">
         <div class="logo-unimar-inicio"> 
-            <a href="https://oficial.unimar.br/" target="_blank"> <img src="img/unimar-branco.png" alt=" logo unimar" class="logo-img"></a>
+            <a href="https://oficial.unimar.br/" target="_blank"> <img src="img/uniteste-reimaginada-branco.png" alt=" logo uniteste" class="logo-img"></a>
         </div>
         
         <nav class="navegacao" id="navbar">
@@ -37,16 +37,87 @@
     </header>
 
     <section class="banner_inicio">
-        <a href="https://oficial.unimar.br/vestibular/#inscricoes" target="_blank"> <img src="img/banner-vestibular-geral-unimar.png" alt=" banner vestibular" class="banner ativo"> </a>
+        <div class="cards-banner">
+            <a href="https://oficial.unimar.br/vestibular/#inscricoes" target="_blank"> <img src="img/banner-vestibular-geral-unimar.png" alt=" banner vestibular" class="banner ativo"> </a>
 
-        <a href="https://oficial.unimar.br/ciberseguranca-e-infraestrutura-de-redes/" target="_blank"> <img src="img/banner-ciberseguranca-infraestrutura-redes.png" alt=" banner-cibersegurança" class="banner"> </a>
+            <a href="https://oficial.unimar.br/ciberseguranca-e-infraestrutura-de-redes/" target="_blank"> <img src="img/banner-ciberseguranca-infraestrutura-redes.png" alt=" banner-cibersegurança" class="banner"> </a>
 
-        <a href="https://oficial.unimar.br/cursos/analise-e-desenvolvimento-de-sistemas/" target="_blank"> <img src="img/banner-analise-desenvolvimento-sistemas.png" alt=" banner-analise-e-desenvolvimento-de-sistmas" class="banner"> </a>
+            <a href="https://oficial.unimar.br/cursos/analise-e-desenvolvimento-de-sistemas/" target="_blank"> <img src="img/banner-analise-desenvolvimento-sistemas.png" alt=" banner-analise-e-desenvolvimento-de-sistmas" class="banner"> </a>
 
-        <a href="https://oficial.unimar.br/cursos/ciencia-da-computacao/" target="_blank"> <img src="img/banner-ciencia-da-computacao.png" alt=" banner-ciencias-da-computacao" class="banner"> </a>
+            <a href="https://oficial.unimar.br/cursos/ciencia-da-computacao/" target="_blank"> <img src="img/banner-ciencia-da-computacao.png" alt=" banner-ciencias-da-computacao" class="banner"> </a>
 
-        <a href="https://oficial.unimar.br/bacharelado-em-inteligencia-artificial/" target="_blank"> <img src="img/banner-inteligencia-artificial.png" alt=" banner-inteligencia-artificial" class="banner"> </a>
+            <a href="https://oficial.unimar.br/bacharelado-em-inteligencia-artificial/" target="_blank"> <img src="img/banner-inteligencia-artificial.png" alt=" banner-inteligencia-artificial" class="banner"> </a>
+        </div>
 
+        <div class="setas-banner">
+            <button class="seta seta-esquerda">❮</button>
+            <button class="seta seta-direita">❯</button>
+        </div>
     </section>
+
+
+
+    <main>
+
+        <section class="chamada-teste">
+            <p class="slogan">UNIVERSIDADE DE MARÍLIA</p>
+            <h2>DESCUBRA QUAL CURSO <span class="destaque">TECH</span> DA UNIMAR MAIS COMBINA COM VOCÊ!</h2>
+            <p class="sobre-unimar"> Responda algumas perguntas rápidas e descubra qual curso da Unimar tem mais a ver com o seu perfil. </p>
+            <a href="#teste"> FAZER O TESTE </a>
+        </section>
+
+        <section class="pergunta" id="pergunta-1">
+            <h3>Como você prefere resolver um problema?</h3>
+            <div class="opcoes">
+                <button class="opcao" data-curso="ads">construir algo rápido</button>
+                <button class="opcao" data-curso="cc">entender a teoria</button>
+                <button class="opcao" data-curso="ciber">investigar a fundo</button>
+                <button class="opcao" data-curso="ia">analisar dados</button>
+            </div>
+        </section>
+
+        <section class="pergunta" id="pergunta-2">
+            <h3>O que mais te dá satisfação?</h3>
+            <div class="opcoes">
+                <button class="opcao" data-curso="ads">ver produto funcionando</button>
+                <button class="opcao" data-curso="cc">entender por que funciona</button>
+                <button class="opcao" data-curso="ciber">achar vulnerabilidade</button>
+                <button class="opcao" data-curso="ia">modelo acertando</button>
+            </div>
+        </section>
+
+        <section class="pergunta" id="pergunta-3">
+            <h3>Que tipo de "jogo mental" te atrai mais</h3>
+            <div class="opcoes">
+                <button class="opcao" data-curso="ads">resolver problemas</button>
+                <button class="opcao" data-curso="cc">quebra-cabeças lógicos</button>
+                <button class="opcao" data-curso="ciber">decifrar códigos</button>
+                <button class="opcao" data-curso="ia">achar padrões</button>
+            </div>
+        </section>
+        
+        <section class="pergunta" id="pergunta-4">
+            <h3>Qual estilo combina mais com você?</h3>
+            <div class="opcoes">
+                <button class="opcao" data-curso="ads">Prático, visual, ágil</button>
+                <button class="opcao" data-curso="cc">Teórico, lógico,Pensativo</button>
+                <button class="opcao" data-curso="ciber">Investigativo, tático, "gato e rato"</button>
+                <button class="opcao" data-curso="ia">Dados, padrões, experimentação</button>
+            </div>
+        </section>
+
+        <section class="pergunta" id="pergunta-5">
+            <h3> Como é sua Afinidade com matemática?</h3>
+            <div class="opcoes">
+                <button class="opcao" data-curso="ads">pouca</button>
+                <button class="opcao" data-curso="cc">gosto de me desafiar</button>
+                <button class="opcao" data-curso="ciber">não fede nem cheira</button>
+                <button class="opcao" data-curso="ia">minha matéria favorita</button>
+            </div>
+        </section>
+        
+    </main>
+
+
 </body>
 </html>
