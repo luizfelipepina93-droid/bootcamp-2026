@@ -274,6 +274,53 @@ body {
     line-height: 1.7;
 }
 
+.curso-link {
+    min-height: 46px;
+    margin-top: 24px;
+    padding: 0 12px 0 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid rgba(149, 227, 247, 0.45);
+    border-radius: 11px;
+    color: #95e3f7;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 220ms ease, background-color 220ms ease, border-color 220ms ease, transform 220ms ease, box-shadow 220ms ease;
+}
+
+.curso-link-seta {
+    width: 28px;
+    height: 28px;
+    display: grid;
+    place-items: center;
+    border-radius: 8px;
+    color: #0f1620;
+    background: #95e3f7;
+    font-size: 16px;
+    transition: transform 220ms ease;
+}
+
+.curso-link:hover,
+.curso-link:focus-visible {
+    color: #ffffff;
+    border-color: #95e3f7;
+    background: rgba(149, 227, 247, 0.1);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+    transform: translateY(-3px);
+}
+
+.curso-link:hover .curso-link-seta,
+.curso-link:focus-visible .curso-link-seta {
+    transform: translate(2px, -2px);
+}
+
+.curso-link:focus-visible {
+    outline: 3px solid rgba(149, 227, 247, 0.28);
+    outline-offset: 3px;
+}
+
 
 
 
@@ -909,6 +956,25 @@ body.tema-claro .curso-conteudo p {
     color: #3a5266;
 }
 
+body.tema-claro .curso-link {
+    color: #0067ad;
+    border-color: rgba(0, 112, 187, 0.34);
+    background: rgba(0, 112, 187, 0.04);
+}
+
+body.tema-claro .curso-link:hover,
+body.tema-claro .curso-link:focus-visible {
+    color: #004d82;
+    border-color: #0070bb;
+    background: rgba(0, 112, 187, 0.1);
+    box-shadow: 0 10px 24px rgba(7, 62, 98, 0.12);
+}
+
+body.tema-claro .curso-link-seta {
+    color: #ffffff;
+    background: #0070bb;
+}
+
 body.tema-claro .localizacao {
     color: #10273a;
 }
@@ -1094,6 +1160,11 @@ body.tema-claro .localizacao-botao--secundario:focus-visible {
 
     .curso-conteudo p {
         font-size: 15px;
+    }
+
+    .curso-link {
+        width: 100%;
+        justify-content: space-between;
     }
 
     .convite-teste {
