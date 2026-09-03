@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra qual curso de tecnologia da Unimar mais combina com o seu perfil.">
+    <title>Quiz Vocacional Tech | Unimar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="teste.css">
+</head>
+<body>
+    <header class="cabecalho" id="cabecalho">
+        <div class="logo-unimar-inicio">
+            <a href="index.html" aria-label="Voltar para a página inicial">
+                <img
+                    src="img/uniteste-reimaginada-branco.png"
+                    data-logo-tema
+                    data-logo-escuro="img/uniteste-reimaginada-branco.png"
+                    data-logo-claro="img/uniteste-reimaginada-preto.png"
+                    alt="Logo Uniteste"
+                    class="logo-img"
+                >
+            </a>
+        </div>
+
+        <nav class="navegacao" id="navbar" aria-label="Navegação principal">
+            <ul>
+                <li class="nav_item"><a href="#quiz">Teste</a></li>
+                <li class="nav_item"><a href="index.html#vestibular">Vestibular</a></li>
+                <li class="nav_item"><a href="index.html#contato">Contato</a></li>
+                <li class="nav_item"><a href="index.html#localizacao">Localização</a></li>
+                <li class="nav_item"><a href="index.html#cursos">Cursos</a></li>
+            </ul>
+        </nav>
+
+        <button class="tema-icone-btn" type="button" aria-label="Ativar tema claro" aria-pressed="false">
+            <span class="tema-icone" aria-hidden="true">☀</span>
+        </button>
+    </header>
+
+    <main class="quiz" id="quiz">
+        <section class="quiz-introducao" aria-labelledby="titulo-quiz">
+            <span class="rotulo">Teste vocacional tech</span>
+            <h1 id="titulo-quiz">Qual curso da Unimar combina com você?</h1>
+            <p>Responda cinco perguntas rápidas e descubra qual caminho na tecnologia mais se aproxima do seu jeito de pensar e criar.</p>
+        </section>
+
+        <section class="quiz-painel" aria-label="Perguntas do teste vocacional">
+            <div class="progresso">
+                <div class="progresso-informacoes">
+                    <span>Seu progresso</span>
+                    <strong aria-live="polite">1 de 5</strong>
+                </div>
+                <div class="progresso-trilha" role="progressbar" aria-label="Progresso do quiz" aria-valuemin="1" aria-valuemax="5" aria-valuenow="1">
+                    <span class="progresso-barra"></span>
+                </div>
+            </div>
+
+            <section class="pergunta ativa" data-pergunta="1" aria-labelledby="pergunta-1">
+                <span class="numero-pergunta">Pergunta 01</span>
+                <h2 id="pergunta-1">Como você prefere resolver um problema?</h2>
+                <p class="ajuda-pergunta">Escolha a alternativa que mais representa você.</p>
+
+                <div class="opcoes">
+                    <button class="opcao" type="button" data-curso="ads">
+                        <span class="opcao-letra">A</span>
+                        <span class="opcao-texto">Criando uma solução prática e colocando a ideia para funcionar.</span>
+                    </button>
+                    <button class="opcao" type="button" data-curso="cc">
+                        <span class="opcao-letra">B</span>
+                        <span class="opcao-texto">Entendendo toda a lógica antes de construir a resposta.</span>
+                    </button>
+                    <button class="opcao" type="button" data-curso="ciber">
+                        <span class="opcao-letra">C</span>
+                        <span class="opcao-texto">Investigando a origem do erro e procurando possíveis falhas.</span>
+                    </button>
+                    <button class="opcao" type="button" data-curso="ia">
+                        <span class="opcao-letra">D</span>
+                        <span class="opcao-texto">Analisando padrões para encontrar uma resposta mais inteligente.</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="pergunta" data-pergunta="2" aria-labelledby="pergunta-2">
+                <span class="numero-pergunta">Pergunta 02</span>
+                <h2 id="pergunta-2">O que mais dá satisfação em um projeto?</h2>
+                <p class="ajuda-pergunta">Pense no tipo de resultado que mais desperta sua curiosidade.</p>
+
+                <div class="opcoes">
+                    <button class="opcao" type="button" data-curso="cc">
+                        <span class="opcao-letra">A</span>
+                        <span class="opcao-texto">Compreender profundamente por que cada parte funciona.</span>
+                    </button>
+                    <button class="opcao" type="button" data-curso="ads">
+                        <span class="opcao-letra">B</span>
+                        <span class="opcao-texto">Ver uma aplicação pronta sendo usada por pessoas reais.</span>
+                    </button>
+                    <button class="opcao" type="button" data-curso="ia">
+                        <span class="opcao-letra">C</span>
+                        <span class="opcao-texto">Perceber que um modelo conseguiu aprender e fazer previsões.</span>
+                    </button>
+                    <button class="opcao" type="button" data-curso="ciber">
+                        <span class="opcao-letra">D</span>
+                        <span class="opcao-texto">Encontrar uma vulnerabilidade antes que ela cause problemas.</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="pergunta" data-pergunta="3" aria-labelledby="pergunta-3">
+                <span class="numero-pergunta">Pergunta 03</span>
+                <h2 id="pergunta-3">Qual destes desafios parece mais interessante?</h2>
+                <p class="ajuda-pergunta">Imagine que você pode começar por qualquer um deles agora.</p>
+
+                <div class="opcoes">
+                    <button class="opcao" type="button" data-curso="ciber">
+                        <span class="opcao-letra">A</span>
+                        <span class="opcao-texto">Decifrar pistas para descobrir como um ataque aconteceu.</span>
+                    </button>
+                    <button class="opcao" type="button" data-curso="ia">
+                        <span class="opcao-letra">B</span>
+                        <span class="opcao-texto">Encontrar padrões escondidos em uma grande quantidade de dados.</span>
+                    </button>
+                    <button class="opcao" type="button" data-curso="ads">
+                        <span class="opcao-letra">C</span>
+                        <span class="opcao-texto">Montar diferentes partes até transformar a ideia em um produto.</span>
+                    </button>
+                    <button class="opcao" type="button" data-curso="cc">
+                        <span class="opcao-letra">D</span>
+                        <span class="opcao-texto">Resolver um problema lógico com uma solução eficiente.</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="pergunta" data-pergunta="4" aria-labelledby="pergunta-4">
+                <span class="numero-pergunta">Pergunta 04</span>
+                <h2 id="pergunta-4">Qual estilo de trabalho mais combina com você?</h2>
+                <p class="ajuda-pergunta">Não existe resposta certa: escolha o processo mais natural para você.</p>
+
+                <div class="opcoes">
+                    <button class="opcao" type="button" data-curso="ia">
+                        <span class="opcao-letra">A</span>
+                        <span class="opcao-texto">Testar hipóteses e usar dados para melhorar os resultados.</span>
+                    </button>
+                    <button class="opcao" type="button" data-curso="cc">
+                        <span class="opcao-letra">B</span>
+                        <span class="opcao-texto">Planejar a lógica e dominar os fundamentos do problema.</span>
+                    </button>
+                    <button class="opcao" type="button" data-curso="ciber">
+                        <span class="opcao-letra">C</span>
+                        <span class="opcao-texto">Antecipar riscos e pensar em como proteger cada ponto.</span>
+                    </button>
+                    <button class="opcao" type="button" data-curso="ads">
+                        <span class="opcao-letra">D</span>
+                        <span class="opcao-texto">Transformar rapidamente uma ideia em site, sistema ou aplicativo.</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="pergunta" data-pergunta="5" aria-labelledby="pergunta-5">
+                <span class="numero-pergunta">Pergunta 05</span>
+                <h2 id="pergunta-5">Como é sua relação com matemática?</h2>
+                <p class="ajuda-pergunta">Escolha a alternativa mais próxima da sua experiência atual.</p>
+
+                <div class="opcoes">
+                    <button class="opcao" type="button" data-curso="ads">
+                        <span class="opcao-letra">A</span>
+                        <span class="opcao-texto">Gosto quando ela ajuda a resolver uma necessidade prática.</span>
+                    </button>
+                    <button class="opcao" type="button" data-curso="ia">
+                        <span class="opcao-letra">B</span>
+                        <span class="opcao-texto">Tenho interesse em estatística, probabilidade e análise de dados.</span>
+                    </button>
+                    <button class="opcao" type="button" data-curso="ciber">
+                        <span class="opcao-letra">C</span>
+                        <span class="opcao-texto">Lido bem com números, mas prefiro desafios investigativos.</span>
+                    </button>
+                    <button class="opcao" type="button" data-curso="cc">
+                        <span class="opcao-letra">D</span>
+                        <span class="opcao-texto">Gosto de raciocínio abstrato, cálculos e problemas complexos.</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="resultado" aria-live="polite" aria-labelledby="titulo-resultado">
+                <div class="resultado-selo" aria-hidden="true">
+                    <span>✓</span>
+                </div>
+                <span class="rotulo">Seu resultado</span>
+                <h2 id="titulo-resultado">Seu perfil combina com tecnologia</h2>
+                <p id="descricao-resultado">Ao concluir as perguntas, seu curso mais compatível aparecerá aqui com uma explicação personalizada.</p>
+                <div class="resultado-acoes">
+                    <a class="botao-primario" href="index.html#cursos">Conhecer este curso</a>
+                    <button class="botao-secundario" type="button">Refazer o teste</button>
+                </div>
+            </section>
+        </section>
+
+        <p class="aviso-quiz">Este teste tem caráter orientativo e ajuda você a conhecer possibilidades dentro da área de tecnologia.</p>
+    </main>
+
+    <footer class="rodape">
+        <p>Uniteste — seu futuro você descobre aqui.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="teste.js"></script>
+</body>
+</html>

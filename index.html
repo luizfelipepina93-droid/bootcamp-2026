@@ -1,16 +1,25 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> bootcamp-2026 </title>
+    <title> Uniteste - 2026 </title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="cabecalho" id="cabecalho">
         <div class="logo-unimar-inicio"> 
-            <a href="https://oficial.unimar.br/" target="_blank"> <img src="img/uniteste-reimaginada-branco.png" alt=" logo uniteste" class="logo-img"></a>
+            <a href="index.html" target="_self">
+                <img
+                    src="img/uniteste-reimaginada-branco.png"
+                    data-logo-tema
+                    data-logo-escuro="img/uniteste-reimaginada-branco.png"
+                    data-logo-claro="img/uniteste-reimaginada-preto.png"
+                    alt="Logo Uniteste"
+                    class="logo-img"
+                >
+            </a>
         </div>
         
         <nav class="navegacao" id="navbar">
@@ -27,97 +36,241 @@
                 <li class="nav_item">
                     <a href="#localizacao"> Localização </a>
                 </li>
+                 <li class="nav_item">
+                    <a href="#cursos" target="_self"> Cursos </a>
+                </li>
             </ul>
         </nav>
-        <button class="tema-icone-btn">
-            <img src="img/lua-metade-face-visivel-na-luz-e-metade-na-escuridao.png" alt="Alternar tema" class="tema-icone">
+        <button class="tema-icone-btn" type="button" aria-label="Ativar tema claro" aria-pressed="false">
+            <span class="tema-icone" aria-hidden="true">☀</span>
         </button>
 
         
     </header>
 
-    <section class="banner_inicio">
+    <section class="banner_inicio" id="vestibular">
         <div class="cards-banner">
             <a href="https://oficial.unimar.br/vestibular/#inscricoes" target="_blank"> <img src="img/banner-vestibular-geral-unimar.png" alt=" banner vestibular" class="banner ativo"> </a>
-
-            <a href="https://oficial.unimar.br/ciberseguranca-e-infraestrutura-de-redes/" target="_blank"> <img src="img/banner-ciberseguranca-infraestrutura-redes.png" alt=" banner-cibersegurança" class="banner"> </a>
-
-            <a href="https://oficial.unimar.br/cursos/analise-e-desenvolvimento-de-sistemas/" target="_blank"> <img src="img/banner-analise-desenvolvimento-sistemas.png" alt=" banner-analise-e-desenvolvimento-de-sistmas" class="banner"> </a>
-
-            <a href="https://oficial.unimar.br/cursos/ciencia-da-computacao/" target="_blank"> <img src="img/banner-ciencia-da-computacao.png" alt=" banner-ciencias-da-computacao" class="banner"> </a>
-
-            <a href="https://oficial.unimar.br/bacharelado-em-inteligencia-artificial/" target="_blank"> <img src="img/banner-inteligencia-artificial.png" alt=" banner-inteligencia-artificial" class="banner"> </a>
         </div>
 
-        <div class="setas-banner">
-            <button class="seta seta-esquerda">❮</button>
-            <button class="seta seta-direita">❯</button>
-        </div>
     </section>
 
-
-
-    <main>
+    <main class="teste" id="teste">
 
         <section class="chamada-teste">
             <p class="slogan">UNIVERSIDADE DE MARÍLIA</p>
-            <h2>DESCUBRA QUAL CURSO <span class="destaque">TECH</span> DA UNIMAR MAIS COMBINA COM VOCÊ!</h2>
-            <p class="sobre-unimar"> Responda algumas perguntas rápidas e descubra qual curso da Unimar tem mais a ver com o seu perfil. </p>
-            <a href="#teste"> FAZER O TESTE </a>
+
+            <h2>
+                DESCUBRA QUAL CURSO
+                <span class="destaque">TECH</span>
+                DA UNIMAR MAIS COMBINA COM VOCÊ!
+            </h2>
         </section>
 
-        <section class="pergunta" id="pergunta-1">
-            <h3>Como você prefere resolver um problema?</h3>
-            <div class="opcoes">
-                <button class="opcao" data-curso="ads">construir algo rápido</button>
-                <button class="opcao" data-curso="cc">entender a teoria</button>
-                <button class="opcao" data-curso="ciber">investigar a fundo</button>
-                <button class="opcao" data-curso="ia">analisar dados</button>
+        <section class="cursos" id="cursos">
+
+            <article class="curso-card" id="curso-ads">
+                <img
+                    src="img/banner-analise-desenvolvimento-sistemas-sem-vestibular.png"
+                    alt="Banner do curso de Análise e Desenvolvimento de Sistemas"
+                    class="curso-imagem"
+                >
+
+                <div class="curso-conteudo">
+                    <h3>Análise e Desenvolvimento de Sistemas</h3>
+
+                    <p>
+                        Curso voltado para quem gosta de transformar ideias em
+                        soluções digitais. Une programação, desenvolvimento web e
+                        mobile, banco de dados, UX e gestão de projetos para criar
+                        sistemas úteis e funcionais.
+                    </p>
+                </div>
+            </article>
+
+            <article class="curso-card curso-card--invertido" id="curso-cc">
+                <img
+                    src="img/banner-ciencia-da-computacao-sem-vestibular.png"
+                    alt="Banner do curso de Ciência da Computação"
+                    class="curso-imagem"
+                >
+
+                <div class="curso-conteudo">
+                    <h3>Ciência da Computação</h3>
+
+                    <p>
+                        Ideal para quem deseja compreender profundamente como a
+                        tecnologia funciona. O curso combina programação,
+                        algoritmos, matemática, hardware e arquitetura de
+                        computadores.
+                    </p>
+                </div>
+            </article>
+
+            <article class="curso-card" id="curso-ciber">
+                <img
+                    src="img/banner-ciberseguranca-infraestrutura-redes-sem-vestibular.png"
+                    alt="Banner do curso de Cibersegurança e Infraestrutura de Redes"
+                    class="curso-imagem"
+                >
+
+                <div class="curso-conteudo">
+                    <h3>Cibersegurança e Infraestrutura de Redes</h3>
+
+                    <p>
+                        Para quem gosta de investigar, identificar vulnerabilidades
+                        e proteger sistemas. O curso aborda redes, criptografia,
+                        segurança de servidores, ethical hacking, análise de
+                        malware e perícia digital.
+                    </p>
+                </div>
+            </article>
+
+            <article class="curso-card curso-card--invertido" id="curso-ia">
+                <img
+                    src="img/banner-inteligencia-artificial-sem-vestibular.png"
+                    alt="Banner do curso de Inteligência Artificial"
+                    class="curso-imagem"
+                >
+
+                <div class="curso-conteudo">
+                    <h3>Inteligência Artificial</h3>
+
+                    <p>
+                        Voltado para quem se interessa por dados, padrões e
+                        máquinas capazes de aprender. O curso explora Machine
+                        Learning, Deep Learning, visão computacional, processamento
+                        de linguagem natural e inteligência artificial generativa.
+                    </p>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="convite-teste">
+            <div class="convite-conteudo">
+                <span class="convite-etiqueta">Teste vocacional tech</span>
+                <h2>Seu perfil aponta para qual futuro?</h2>
+
+                <p class="sobre-unimar">
+                    Responda cinco perguntas rápidas e descubra qual curso de
+                    tecnologia da Unimar mais combina com o seu jeito de pensar.
+                </p>
+
+                <ul class="convite-detalhes" aria-label="Informações sobre o teste">
+                    <li><strong>5</strong><span>perguntas</span></li>
+                    <li><strong>4</strong><span>cursos</span></li>
+                    <li><strong>1</strong><span>resultado</span></li>
+                </ul>
+
+                <a class="convite-botao" href="teste.html">
+                    <span>Fazer o teste agora</span>
+                    <span class="convite-seta" aria-hidden="true">→</span>
+                </a>
+            </div>
+
+            <div class="convite-visual" aria-hidden="true">
+                <span class="convite-orbita convite-orbita--externa"></span>
+                <span class="convite-orbita convite-orbita--interna"></span>
+                <span class="convite-ponto convite-ponto--um"></span>
+                <span class="convite-ponto convite-ponto--dois"></span>
+                <span class="convite-ponto convite-ponto--tres"></span>
+
+                <div class="convite-cartao">
+                    <span>Seu resultado</span>
+                    <strong>O curso ideal<br>para você</strong>
+                    <div class="convite-progresso"><span></span></div>
+                </div>
             </div>
         </section>
 
-        <section class="pergunta" id="pergunta-2">
-            <h3>O que mais te dá satisfação?</h3>
-            <div class="opcoes">
-                <button class="opcao" data-curso="ads">ver produto funcionando</button>
-                <button class="opcao" data-curso="cc">entender por que funciona</button>
-                <button class="opcao" data-curso="ciber">achar vulnerabilidade</button>
-                <button class="opcao" data-curso="ia">modelo acertando</button>
-            </div>
-        </section>
-
-        <section class="pergunta" id="pergunta-3">
-            <h3>Que tipo de "jogo mental" te atrai mais</h3>
-            <div class="opcoes">
-                <button class="opcao" data-curso="ads">resolver problemas</button>
-                <button class="opcao" data-curso="cc">quebra-cabeças lógicos</button>
-                <button class="opcao" data-curso="ciber">decifrar códigos</button>
-                <button class="opcao" data-curso="ia">achar padrões</button>
-            </div>
-        </section>
-        
-        <section class="pergunta" id="pergunta-4">
-            <h3>Qual estilo combina mais com você?</h3>
-            <div class="opcoes">
-                <button class="opcao" data-curso="ads">Prático, visual, ágil</button>
-                <button class="opcao" data-curso="cc">Teórico, lógico,Pensativo</button>
-                <button class="opcao" data-curso="ciber">Investigativo, tático, "gato e rato"</button>
-                <button class="opcao" data-curso="ia">Dados, padrões, experimentação</button>
-            </div>
-        </section>
-
-        <section class="pergunta" id="pergunta-5">
-            <h3> Como é sua Afinidade com matemática?</h3>
-            <div class="opcoes">
-                <button class="opcao" data-curso="ads">pouca</button>
-                <button class="opcao" data-curso="cc">gosto de me desafiar</button>
-                <button class="opcao" data-curso="ciber">não fede nem cheira</button>
-                <button class="opcao" data-curso="ia">minha matéria favorita</button>
-            </div>
-        </section>
-        
     </main>
+    <section class="localizacao" id="localizacao">
+        <div class="localizacao-cabecalho">
+            <span class="localizacao-etiqueta">Encontre a Unimar</span>
+            <h2>Seu próximo passo começa aqui.</h2>
+            <p>Conheça o campus da Universidade de Marília e veja como chegar ao lugar onde sua jornada acadêmica pode começar.</p>
+        </div>
 
+        <div class="localizacao-grade">
+            <div class="localizacao-mapa">
+                <iframe
+                    src="https://www.google.com/maps?q=UNIMAR%20Universidade%20de%20Mar%C3%ADlia%20Avenida%20Hygino%20Muzzy%20Filho%201001%20Mar%C3%ADlia%20SP&amp;output=embed"
+                    title="Mapa com a localização da Universidade de Marília"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen
+                ></iframe>
+            </div>
 
+            <div class="localizacao-informacoes">
+                <span class="localizacao-campus">Campus Universitário</span>
+                <h3>Universidade de Marília</h3>
+
+                <address>
+                    Avenida Hygino Muzzy Filho, 1001<br>
+                    Marília — São Paulo<br>
+                    CEP 17.525-902
+                </address>
+
+                <p class="localizacao-texto">Planeje sua visita, conheça a estrutura da universidade e descubra de perto o ambiente onde os cursos de tecnologia acontecem.</p>
+
+                <div class="localizacao-acoes">
+                    <a
+                        class="localizacao-botao localizacao-botao--principal"
+                        href="https://www.google.com/maps/place/UNIMAR+-+Universidade+de+Mar%C3%ADlia/@-22.2367935,-49.9664573,17z/data=!3m1!4b1!4m6!3m5!1s0x94bfd7710bfa340b:0xaa8d32096bc6676b!8m2!3d-22.2367935!4d-49.9664573!16s%2Fg%2F120x0wmk"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >Abrir no Google Maps</a>
+                    <a
+                        class="localizacao-botao localizacao-botao--secundario"
+                        href="https://oficial.unimar.br/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >Conhecer a Unimar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape" id="contato">
+        <div class="rodape-conteudo">
+            <div class="rodape-marca">
+                <a href="#cabecalho">
+                    <img src="img/uniteste-reimaginada-branco.png" alt="Logo Uniteste" class="rodape-logo">
+                </a>
+                <p>Descubra o curso de tecnologia que mais combina com você.</p>
+            </div>
+
+            <nav class="rodape-navegacao" aria-label="Navegação do rodapé">
+                <h2>Links rápidos</h2>
+                <ul>
+                    <li><a href="#teste">Teste vocacional</a></li>
+                    <li><a href="https://oficial.unimar.br/vestibular/" target="_blank">Vestibular</a></li>
+                </ul>
+            </nav>
+
+            <section class="rodape-contato">
+                <h2 id="titulo-contato">Contato</h2>
+                <p>
+                    <a href="https://oficial.unimar.br/" target="_blank" >
+                        Acesse o site oficial Unimar
+                    </a>
+                </p>
+            </section>
+
+            <section class="rodape-localizacao" id="localizacao-rodape">
+                <h2 id="titulo-localizacao">Localização</h2>
+                <p><a href="https://www.google.com/maps/place/UNIMAR+-+Universidade+de+Mar%C3%ADlia/@-22.2367935,-49.9664573,17z/data=!3m1!4b1!4m6!3m5!1s0x94bfd7710bfa340b:0xaa8d32096bc6676b!8m2!3d-22.2367935!4d-49.9664573!16s%2Fg%2F120x0wmk?entry=ttu&g_ep=EgoyMDI2MDgzMC4wIKXMDSoASAFQAw%3D%3D"> Marília - sp</a></p>    
+            </section>
+        </div>
+
+        <div class="rodape-final">
+            <p>&copy; 2026 Uniteste.</p>
+            <p>Desenvolvido por <a href="https://github.com/luizfelipepina93-droid" target="_blank">Felipe pina</a>.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
